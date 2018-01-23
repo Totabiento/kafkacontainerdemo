@@ -13,8 +13,13 @@ This is a docker container image that has both Kafka and Zookeeper running in th
 
 2- Make sure docker engine is running by running ```docker run hello-world```
 
+### Creating the Kafka container from the Dockerfile
+1- Download the kafka folder and from the folder run ```sudo docker build -t kafka .```
+
+2- This should create the image from scratch, otherwise you can load the image
+
 ### Loading the image in docker
-1- Place the image file in a local folder and run ```docker load --input kafka_zookeeper_container.tar```
+1- Place the image file (kafka_zookeeper_container.tar) in a local folder and run ```docker load --input kafka_zookeeper_container.tar```
 
 2- Check that the image is loaded by running ```docker images```
 
